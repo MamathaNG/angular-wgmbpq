@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-
+  product;
   constructor(
     private route: ActivatedRoute,
   ) { }
@@ -16,5 +16,4 @@ export class ProductDetailsComponent implements OnInit {
     this.product = products[+params.get('productId')];
   });
   }
-
 }
